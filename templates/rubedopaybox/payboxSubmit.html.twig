@@ -1,0 +1,24 @@
+{% extends '@Root/block.html.twig' %}
+{% block mainContent %}
+    <form method="POST" action="{{ payboxUrl }}" id="payboxSubmit">
+        <input type="hidden" name="PBX_SITE" value="{{ payboxSiteId|raw }}">
+        <input type="hidden" name="PBX_RANG" value="{{ payboxRank|raw }}">
+        <input type="hidden" name="PBX_IDENTIFIANT" value="{{ payboxId|raw }}">
+        <input type="hidden" name="PBX_TOTAL" value="{{ pbxTotal|raw }}">
+        <input type="hidden" name="PBX_DEVISE" value="978">
+        <input type="hidden" name="PBX_REPONDRE_A" value="{{ ipnRoute|raw }}">
+        <input type="hidden" name="PBX_EFFECTUE" value="{{ urlReturn|raw }}">
+        <input type="hidden" name="PBX_REFUSE" value="{{ urlReturn|raw }}">
+        <input type="hidden" name="PBX_ANNULE" value="{{ urlReturn|raw }}">
+        <input type="hidden" name="PBX_CMD" value="{{ orderNumber|raw }}">
+        <input type="hidden" name="PBX_PORTEUR" value="{{ emailUser|raw }}">
+        <input type="hidden" name="PBX_RETOUR" value="{{ format|raw }}">
+        <input type="hidden" name="PBX_HASH" value="SHA512">
+        <input type="hidden" name="PBX_TIME" value="{{ date|raw }}">
+        <input type="hidden" name="PBX_HMAC" value="{{ hmac|raw }}">
+        <input type="submit" value="Envoyer">
+    </form>
+    <script type="text/javascript">
+        document.getElementById('payboxSubmit').submit();
+    </script>
+{% endblock mainContent %}

@@ -1,0 +1,50 @@
+[
+    {
+        "type": "Ext.form.field.Text",
+        "config": {
+            "fieldLabel": "Site ID Paybox",
+            "name": "payboxSiteId",
+            "allowBlank": false
+        }
+    },
+    {
+        "type":"Ext.form.field.Text",
+        "config":{
+            "fieldLabel":"ID Paybox",
+            "name":"payboxId",
+            "allowBlank":false
+        }
+    },
+    {
+        "type":"Ext.form.field.Text",
+        "config":{
+            "fieldLabel":"Paybox rank",
+            "name":"payboxRank",
+            "allowBlank":false
+        }
+    },
+    {
+        "type":"Ext.form.field.Text",
+        "config":{
+            "fieldLabel":"Paybox key",
+            "name":"payboxKey",
+            "allowBlank":false
+        }
+    },
+    {
+        "type":"Ext.form.field.Text",
+        "config":{
+            "fieldLabel":"Paybox return URL",
+            "name":"urlReturn",
+            "allowBlank":false
+        }
+    },
+    {
+        "type":"Ext.form.field.Text",
+        "config":{
+            "fieldLabel":"Paybox URL",
+            "name":"payboxUrl",
+            "allowBlank":false
+        }
+    }
+]
